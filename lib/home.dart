@@ -91,13 +91,14 @@ class _HomeState extends State<Home> {
             Expanded(
               child: ListView.builder(
                 itemCount: data.length,
+                physics: BouncingScrollPhysics(),
                 itemBuilder: (context, index){
                   return Card(
                     child: Padding(
                       padding: const EdgeInsets.all(15.0),
                       child: Row(
                         children: [
-                          Icon(Icons.person,size: 20,color: Colors.brown,),
+                          Icon(Icons.person,size: 25,color: Colors.brown,),
                           SizedBox(width: 25,),
                           Column(
                             crossAxisAlignment: .start,
